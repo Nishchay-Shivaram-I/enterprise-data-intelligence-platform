@@ -120,10 +120,6 @@ This architecture enables:
 - **Scalable growth** supporting increasing data volumes
 - **Self-service analytics** for business stakeholders
 
-## 🎥 Demo
-
-- [📺 Project Walkthrough Video](demo/video-demo-link.md)
-- [📋 Live Demo Guide](demo/project-walkthrough.md)
 
 ## 📚 Documentation
 
