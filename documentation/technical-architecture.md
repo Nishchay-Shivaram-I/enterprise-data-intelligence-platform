@@ -1,30 +1,31 @@
-# Technical Architecture
+# Technical Architecture - Universal Data Analyzer
 
-## Architecture Components
+## System Overview
+Detailed technical implementation of the AWS data lakehouse architecture.
 
-### Data Storage (Amazon S3)
-- **Bronze Bucket**: Raw data ingestion
-- **Silver Bucket**: Cleaned, transformed data
-- **Gold Bucket**: Business-ready aggregated data
+## Component Details
 
-### Data Processing (AWS Glue)
-- **Crawlers**: Automatic schema discovery
-- **ETL Jobs**: Data transformation pipelines
-- **Data Catalog**: Centralized metadata management
+### Amazon S3 Storage Architecture
+- **Bucket Structure**: `/bronze/`, `/silver/`, `/gold/`
+- **Partitioning Strategy**: Year/Month/Day hierarchy
+- **Storage Classes**: Standard → IA → Glacier lifecycle
 
-### Data Analytics (Amazon Athena)
-- **Query Engine**: Serverless SQL analytics
-- **Cost Optimization**: Partition-based querying
-- **Performance**: Columnar storage (Parquet)
+### AWS Glue ETL Pipeline
+- **Crawler Configuration**: Automated schema detection
+- **Job Scheduling**: Event-driven and scheduled execution
+- **Error Handling**: Retry logic and failure notifications
 
-### Visualization (Amazon QuickSight)
-- **Interactive Dashboards**: Business intelligence
-- **Real-time Analytics**: Live data connections
-- **User Management**: Role-based access control
+### Amazon Athena Analytics
+- **Query Optimization**: Partition pruning and projection
+- **Cost Management**: Query result caching and compression
+- **Performance Tuning**: Columnar storage benefits
 
-## Data Flow
-1. Raw data → S3 Bronze Layer
-2. Glue Crawler discovers schema
-3. Glue ETL jobs transform Bronze → Silver → Gold
-4. Athena queries processed data
-5. QuickSight visualizes insights
+## Security Implementation
+- IAM roles and policies
+- S3 bucket encryption
+- VPC endpoints for secure communication
+
+## Monitoring & Alerting
+- CloudWatch metrics and alarms
+- Cost monitoring and budgets
+- Performance optimization tracking
