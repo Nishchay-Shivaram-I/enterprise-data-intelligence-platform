@@ -1,0 +1,15 @@
+{
+  "table_name": "flight_data",
+  "description": "US domestic flight data with departure/arrival information",
+  "columns": [
+    {"name": "year", "type": "int", "description": "Flight year"},
+    {"name": "month", "type": "int", "description": "Flight month"},
+    {"name": "day_of_month", "type": "int", "description": "Day of month"},
+    {"name": "dep_time", "type": "int", "description": "Departure time (HHMM format)"},
+    {"name": "arr_time", "type": "int", "description": "Arrival time (HHMM format)"},
+    {"name": "carrier", "type": "string", "description": "Airline carrier code"},
+    {"name": "fl_num", "type": "int", "description": "Flight number"},
+    {"name": "distance", "type": "int", "description": "Flight distance in miles"},
+    {"name": "cancelled", "type": "int", "description": "Cancellation flag (0=No, 1=Yes)"}
+  ]
+}
