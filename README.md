@@ -72,13 +72,52 @@ git clone https://github.com/Nishchay-Shivaram-I/enterprise-data-intelligence-pl
 
 ## 📂 Repository Structure
 ```
-├── architecture/ # System diagrams and AWS screenshots
-├── sql-queries/ # ETL and analytics SQL code
-├── etl/ # Glue jobs and custom transformations
-├── documentation/ # Technical docs and guides
-├── sample-data/ # Sample datasets and schemas
-├── dashboards/ # Query results and visualizations
-└── demo/ # Project walkthrough materials
+enterprise-data-intelligence-platform/
+├── 📁 architecture/
+│   ├── 📁 diagrams/
+│   │   └── README.md
+│   ├── 📁 aws-screenshots/
+│   │   └── (your AWS console screenshots)
+│   └── 📁 workflow-images/
+│       └── README.md
+├── 📁 dashboards/
+│   ├── 📁 athena-query-results/
+│   │   └── README.md
+│   └── 📁 quicksight-mockups/
+│       └── README.md
+├── 📁 demo/
+│   ├── 📁 screenshots/
+│   │   ├── 📁 s3-architecture/
+│   │   │   └── README.md
+│   │   ├── 📁 glue-tables/
+│   │   │   └── README.md
+│   │   ├── 📁 athena-analytics/
+│   │   │   └── README.md
+│   │   └── 📁 athena-results/
+│   │       └── README.md
+│   └── project-walkthrough.md
+├── 📁 documentation/
+│   ├── project-overview.md
+│   ├── technical-architecture.md
+│   ├── challenges-solutions.md
+│   ├── lessons-learned.md
+│   └── interview-guide.md
+├── 📁 sample-data/
+│   ├── flight-data-sample.csv
+│   └── data-schema.json
+├── 📁 sql-queries/
+│   ├── bronze-to-silver-transformation.sql
+│   ├── gold-layer-analytics.sql
+│   ├── business-intelligence-queries.sql
+│   └── data-quality-checks.sql
+├── 📁 etl/
+│   ├── 📁 glue-jobs/
+│   ├── 📁 crawlers/
+│   └── custom-transformations.py
+├── .gitignore
+├── LICENSE
+└── README.md
+
 ```
 
 
@@ -125,7 +164,6 @@ This architecture enables:
 
 - [🏗️ Technical Architecture](documentation/technical-architecture.md)
 - [💡 Lessons Learned](documentation/lessons-learned.md)
-- [🎯 Interview Guide](documentation/interview-guide.md)
 - [⚡ Challenges & Solutions](documentation/challenges-solutions.md)
 
 ## 🏆 Achievement Highlights
