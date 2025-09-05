@@ -1,0 +1,17 @@
+# Athena Query Results
+
+This folder contains screenshots and exports of query results from Amazon Athena, demonstrating the business intelligence capabilities of the Universal Data Analyzer.
+
+## Contents
+- Query execution screenshots showing successful data processing
+- Sample result sets from business intelligence queries
+- Performance metrics and execution times
+- Data visualization exports
+
+## Key Insights Generated
+- Airline market share analysis
+- Route performance benchmarking  
+- Flight distance distribution patterns
+- Data quality validation results
+
+*Screenshots and result files will be added as the project progresses.*
