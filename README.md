@@ -176,6 +176,5 @@ This architecture enables:
 
 **⭐ Star this repository if you found it helpful!**
 
-*This project demonstrates enterprise-level cloud data engineering skills suitable for senior data engineer positions.*
 
 
